@@ -15,7 +15,7 @@ for weight in lines:
 elf_weights.append(elf)
 
 # Calculate number of calories each elf is carrying
-weights = list(map(sum, elf_weights))
+weights = map(sum, elf_weights)
 weights  = sorted(weights, reverse=True)
 print(f"Elf with most snacks has {weights[0]} calories")
 print(f"Top 3 elves with most snacks have {sum(weights[0:3])} calories")
